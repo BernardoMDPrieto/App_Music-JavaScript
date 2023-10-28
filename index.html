@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App de musica com javascript, html e css">
+    <meta name="author" content="Bernardo Prieto">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/k7icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/502895c7df.js" crossorigin="anonymous"></script>
+    <title>App de Música</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="img/a-ha.jpg" class="song-img" alt="a-ha capa do álbum take on me">
+            <h1>Take On Me</h1>
+            <p>a-ha</p>
+
+
+            <audio  id="song">
+                <source src="music/musicTakeOnMe.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+        
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
